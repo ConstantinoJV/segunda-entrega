@@ -1,0 +1,372 @@
+
+
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital@0;1 & family= Roboto & display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    padding: 20px;
+}
+.color{
+    background-color:rgb(253, 229, 229) ;
+}
+.text{
+    font-family:'Roboto', sans-serif;
+}
+h1{
+    color: black;
+    padding: 27px;
+    margin: 20px ;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Roboto', sans-serif;
+    font-size: 75px; 
+}
+ul li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color:rgb(15, 2, 2);
+}
+
+.principal{
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family:'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 25px; 
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    text-transform: uppercase;
+    color: rgb(49, 5, 5);
+    background-color: darkgray;    
+}
+.flexLogo{
+    margin: 20px;
+    width: 80px;
+}
+.flexMarcas{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h2{
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+.padre{
+    background-color: rgb(247, 178, 178);
+    margin: 20px 80px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px ;
+    justify-items: center;
+    align-items: center;
+}
+.hijo{
+    width: 350px;
+}
+.imagenes{
+    width: 350PX;
+    height: 300PX;
+    border: 5px solid black;  
+}
+
+footer{
+    background-color: rgb(253, 229, 229);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flexfooter{
+    width: 100px;
+} 
+
+.parrafo{
+    font-family:'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 25px; 
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    color: rgb(49, 5, 5);
+    background-color: darkgray;  
+    border: 5px solid black; 
+}
+
+.intro{
+    grid-area: intro;
+}
+.pbujias{
+    grid-area: pbujias;
+}
+.bujias{
+    grid-area: bujias;
+}
+.inyeccion{
+    grid-area: inyeccion;
+}
+.pinyeccion{
+    grid-area: pinyeccion;
+}
+.paceleracion{
+    grid-area: paceleracion;
+}
+.aceleracion{
+    grid-area: aceleracion;
+}
+.sensores{
+    grid-area: sensores;
+}
+.psensores{
+    grid-area: psensores;
+}
+.pcorrea{
+    grid-area: pcorrea;
+}
+.correa{
+    grid-area: correa;
+}
+.valvulas{
+    grid-area: valvulas;
+}
+.videoSincro{
+    grid-area: videosincro;
+}
+.padreSincro{
+    display: grid;
+    margin: 20px 80px;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "intro intro"
+    "pbujias bujias"
+    "inyeccion pinyeccion"
+    "paceleracion aceleracion"
+    "sensores psensores"
+    "pcorrea pcorrea"
+    "correa valvulas"
+    "videosincro videosincro";
+    justify-items: center;
+    align-items: center;
+}
+.imgs{
+    border: 5px solid black; 
+    width: 540px;
+    height: 430px;
+}
+.introFreno{
+    grid-area: introFreno;
+}
+.disco{
+    grid-area: disco;
+}
+.tambor{
+    grid-area: tambor;
+}
+.pastillas{
+    grid-area: pastillas;
+}
+.liquido{
+    grid-area: liquido;
+}
+.purga{
+    grid-area: purga;
+}
+.pbomba{
+    grid-area: pbomba;
+}
+.bomba{
+    grid-area: bomba;
+}
+.bombai{
+    grid-area: bombai;
+}
+.manguera{
+    grid-area: manguera;
+}
+.absFmano{
+    grid-area: absFmano;
+}
+.modulo{
+    grid-area: modulo;
+}
+.fmano{
+    grid-area: fmano;
+}
+.videoFreno{
+    grid-area: videoFreno;
+}
+.padreFreno{
+    display: grid;
+    margin: 20px;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "introFreno introFreno introFreno"
+    "disco tambor pastillas"
+    "liquido liquido purga"
+    "pbomba pbomba pbomba"
+    "bomba bombai manguera"
+    "absFmano absFmano absFmano"
+    "modulo fmano fmano"
+    "videoFreno videoFreno videoFreno";
+    justify-items: center;
+    align-items: center;
+}
+.imgf{
+    border: 5px solid black; 
+    width: 400px;
+    height: 300px;
+}
+.ifmano{
+    width: 820px;
+}
+
+@media (max-width:1023px){
+    .padre{
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 450px 450px 450px;
+    }
+    h1{
+        font-size: 60px;
+        margin: 5px; 
+        padding: 15px;
+    }
+    .padreSincro{
+        display: grid;
+        margin: 20px 20px;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "intro"
+        "pbujias" 
+        "bujias"
+        "inyeccion" 
+        "pinyeccion"
+        "paceleracion"
+        "aceleracion"
+        "sensores" 
+        "psensores"
+        "pcorrea"
+        "correa" 
+        "valvulas"
+        "videosincro";
+        justify-items: center;
+        align-items: center;
+    }
+    .imgs{ 
+        width: 480px;
+        height: 380px;
+    }
+    .padreFreno{
+        display: grid;
+        margin: 20px;
+        gap:10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "introFreno disco"
+        "introFreno tambor"
+        "introFreno pastillas"
+        "liquido purga"
+        "pbomba bombai"
+        "pbomba bomba"
+        "pbomba manguera"
+        "absFmano absFmano"
+        "modulo fmano"
+        "videoFreno videoFreno";
+        justify-items: center;
+        align-items: center;
+    }
+    .ifmano{
+        width: 400px;
+    }
+}
+
+@media (max-width:600px){
+    .padre{
+        grid-template-columns: 1fr;
+        grid-template-rows: 380px 380px 380px 380px;
+        margin: 20px;
+    }
+    .principal{
+        font-size: 15px;
+        margin: 20px;
+    }
+    h1{
+        font-size: 50px;
+        margin: 5px; 
+        padding: 15px;
+    }
+    footer{
+        margin: 20px;
+        justify-content: space-around;
+    }
+    .flexfooter{
+        width: 70px;
+    } 
+    .padreSincro{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "intro"
+        "pbujias" 
+        "bujias"
+        "inyeccion" 
+        "pinyeccion"
+        "paceleracion"
+        "aceleracion"
+        "sensores" 
+        "psensores"
+        "pcorrea"
+        "correa" 
+        "valvulas"
+        "videosincro";
+        justify-items: center;
+        align-items: center;
+    }
+    .padreFreno{
+        display: grid;
+        gap:10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "introFreno"
+        "disco"
+        "tambor"
+        "pastillas"
+        "liquido"
+        "purga"
+        "pbomba"
+        "bomba"
+        "bombai"
+        "manguera"
+        "absFmano"
+        "modulo"
+        "fmano"
+        "videoFreno";
+        justify-items: center;
+        align-items: center;
+    }
+    .imgf{
+        width: 450px;
+        height: 400px;
+    }
+    .video{
+        width: 450px;
+    }
+}
