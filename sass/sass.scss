@@ -1,0 +1,147 @@
+@import "generales";
+@import "logosMarcas";
+@import "grillaIndex";
+@import "grillaSincronizacion";
+@import "grillaFreno";
+@import "grillaSuspension";
+@import "grillaEscaner";
+@import "contactos";
+
+
+
+
+
+
+@media (max-width:1023px){
+    .padre{
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 450px 450px 450px;
+    }
+    h1{
+        font-size: 60px;
+        margin: 5px; 
+        padding: 15px;
+    }
+    .padreSincro{
+        display: grid;
+        margin: 20px 20px;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "intro"
+        "pbujias" 
+        "bujias"
+        "inyeccion" 
+        "pinyeccion"
+        "paceleracion"
+        "aceleracion"
+        "sensores" 
+        "psensores"
+        "pcorrea"
+        "correa" 
+        "valvulas"
+        "videosincro";
+        justify-items: center;
+        align-items: center;
+    }
+    .imgs{ 
+        width: 480px;
+        height: 380px;
+    }
+    .padreFreno{
+        display: grid;
+        margin: 20px;
+        gap:10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "introFreno disco"
+        "introFreno tambor"
+        "introFreno pastillas"
+        "liquido purga"
+        "pbomba bombai"
+        "pbomba bomba"
+        "pbomba manguera"
+        "absFmano absFmano"
+        "modulo fmano"
+        "videoFreno videoFreno";
+        justify-items: center;
+        align-items: center;
+    }
+    .ifmano{
+        width: 400px;
+    }
+}
+
+@media (max-width:600px){
+    .padre{
+        grid-template-columns: 1fr;
+        grid-template-rows: 380px 380px 380px 380px;
+        margin: 20px;
+    }
+    .principal{
+        font-size: 15px;
+        margin: 20px;
+    }
+    h1{
+        font-size: 50px;
+        margin: 5px; 
+        padding: 15px;
+    }
+    footer{
+        margin: 20px;
+        justify-content: space-around;
+    }
+    .flexfooter{
+        width: 70px;
+    } 
+    .padreSincro{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "intro"
+        "pbujias" 
+        "bujias"
+        "inyeccion" 
+        "pinyeccion"
+        "paceleracion"
+        "aceleracion"
+        "sensores" 
+        "psensores"
+        "pcorrea"
+        "correa" 
+        "valvulas"
+        "videosincro";
+        justify-items: center;
+        align-items: center;
+    }
+    .padreFreno{
+        display: grid;
+        gap:10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "introFreno"
+        "disco"
+        "tambor"
+        "pastillas"
+        "liquido"
+        "purga"
+        "pbomba"
+        "bomba"
+        "bombai"
+        "manguera"
+        "absFmano"
+        "modulo"
+        "fmano"
+        "videoFreno";
+        justify-items: center;
+        align-items: center;
+    }
+    .imgf{
+        width: 450px;
+        height: 400px;
+    }
+    .video{
+        width: 450px;
+    }
+}

@@ -1,0 +1,79 @@
+.introFreno{
+    grid-area: introFreno;
+}
+.disco{
+    grid-area: disco;
+}
+.tambor{
+    grid-area: tambor;
+}
+.pastillas{
+    grid-area: pastillas;
+}
+.liquido{
+    grid-area: liquido;
+}
+.purga{
+    grid-area: purga;
+}
+.pbomba{
+    grid-area: pbomba;
+}
+.bomba{
+    grid-area: bomba;
+}
+.bombai{
+    grid-area: bombai;
+}
+.manguera{
+    grid-area: manguera;
+}
+.absFmano{
+    grid-area: absFmano;
+}
+.modulo{
+    grid-area: modulo;
+}
+.fmano{
+    grid-area: fmano;
+}
+.videoFreno{
+    grid-area: videoFreno;
+}
+.padreFreno{
+    display: grid;
+    margin: 20px;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "introFreno introFreno introFreno"
+    "disco tambor pastillas"
+    "liquido liquido purga"
+    "pbomba pbomba pbomba"
+    "bomba bombai manguera"
+    "absFmano absFmano absFmano"
+    "modulo fmano fmano"
+    "videoFreno videoFreno videoFreno";
+    justify-items: center;
+    align-items: center;
+    .parrafo{
+        font-family:'Roboto', sans-serif;
+        font-weight: bolder;
+        font-size: 25px; 
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 2px;
+        word-spacing: 6px;
+        color: rgb(49, 5, 5);
+        background-color: darkgray;  
+        border: 5px solid black; 
+    }
+}
+.imgf{
+    border: 5px solid black; 
+    width: 400px;
+    height: 300px;
+}
+.ifmano{
+    width: 820px;
+}

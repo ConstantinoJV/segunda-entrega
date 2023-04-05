@@ -1,0 +1,144 @@
+
+.introSuspen{
+    grid-area: introSuspen;
+}
+.pamortiguadores{
+    grid-area: pamortiguadores;
+}
+.amortiguadores{
+    grid-area: amortiguadores;
+}
+.amortiguador{
+    grid-area: amortiguador;
+}
+.rotulas{
+    grid-area: rotulas;
+}
+.protulas{
+    grid-area: protulas;
+}
+.pbujes{
+    grid-area: pbujes;
+}
+.bujes{
+    grid-area: bujes;
+}
+.tijeras{
+    grid-area: tijeras;
+}
+.ptijeras{
+    grid-area: ptijeras;
+}
+.pespirales{
+    grid-area: pespirales;
+}
+.espirales{
+    grid-area: espirales;
+}
+.muelles{
+    grid-area: muelles;
+}
+.videoSuspen{
+    grid-area: videoSuspen;
+}
+
+.padreSuspen{
+    display: grid;
+    margin: 26px 12px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-template-areas: 
+    "introSuspen"
+    "pamortiguadores"
+    "amortiguadores"
+    "amortiguador"
+    "protulas"
+    "rotulas"
+    "pbujes"
+    "bujes"
+    "ptijeras"
+    "tijeras"
+    "pespirales"
+    "espirales"
+    "videoSuspen";
+    .parrafo{
+        font-family:'Roboto', sans-serif;
+        font-weight: bolder;
+        font-size: 18px; 
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 2px;
+        word-spacing: 6px;
+        color: rgb(49, 5, 5);
+        background-color: darkgray;  
+        border: 5px solid black; 
+    }
+}
+.imgsus{
+    border: 5px solid black; 
+    width: 100%;
+    height: 430px;
+}
+.videoSu{
+    height: 350px;
+    width: 100%;
+}
+
+
+//responsiv de suspension//
+
+@media (min-width:600px){
+    .padreSuspen{
+        display: grid;
+        margin: 26px 12px;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        grid-template-areas: 
+        "introSuspen introSuspen"
+        "pamortiguadores pamortiguadores"
+        "amortiguadores amortiguador"
+        "protulas rotulas"
+        "pbujes bujes"
+        "ptijeras tijeras"
+        "pespirales espirales"
+        "videoSuspen videoSuspen";
+        .parrafo
+        {
+            font-size: 25px;
+        }
+    }
+    .videoSu{
+        height: 430px;
+        width: 600px;
+    }
+}
+
+@media (min-width:1023px){
+    .padreSuspen{
+        display: grid;
+        margin: 26px 80px;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        grid-template-areas: 
+        "introSuspen introSuspen"
+        "pamortiguadores pamortiguadores"
+        "amortiguadores amortiguador"
+        "protulas rotulas"
+        "pbujes bujes"
+        "ptijeras tijeras"
+        "pespirales espirales"
+        "videoSuspen videoSuspen";
+    }
+    .videoSu{
+        height: 550px;
+        width: 800px;
+    }
+}
+
+

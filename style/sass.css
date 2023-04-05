@@ -1,0 +1,642 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Poppins:ital@0;1 & family= Roboto & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+}
+header .color {
+  background-color: rgb(253, 229, 229);
+}
+header .color .text {
+  font-family: "Roboto", sans-serif;
+}
+
+.gradiente {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: linear-gradient(to top, darkgray, rgb(253, 229, 229));
+}
+.gradiente h1 {
+  color: black;
+  padding: 27px;
+  margin: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 75px;
+}
+
+.principal {
+  padding: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  text-transform: uppercase;
+  color: rgb(49, 5, 5);
+  background-color: darkgray;
+}
+
+footer {
+  background-color: rgb(253, 229, 229);
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .flexfooter {
+  width: 100px;
+}
+
+.flexMarcas {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flexMarcas .flexLogo {
+  margin: 20px;
+  width: 80px;
+}
+
+.padre {
+  background-color: rgb(247, 178, 178);
+  margin: 20px 80px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px 400px;
+  justify-items: center;
+  align-items: center;
+}
+.padre .hijo {
+  width: 350px;
+}
+.padre .hijo h2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.padre .hijo .imagenes {
+  width: 350PX;
+  height: 300PX;
+  border: 5px solid black;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.pbujias {
+  grid-area: pbujias;
+}
+
+.bujias {
+  grid-area: bujias;
+}
+
+.inyeccion {
+  grid-area: inyeccion;
+}
+
+.pinyeccion {
+  grid-area: pinyeccion;
+}
+
+.paceleracion {
+  grid-area: paceleracion;
+}
+
+.aceleracion {
+  grid-area: aceleracion;
+}
+
+.sensores {
+  grid-area: sensores;
+}
+
+.psensores {
+  grid-area: psensores;
+}
+
+.pcorrea {
+  grid-area: pcorrea;
+}
+
+.correa {
+  grid-area: correa;
+}
+
+.valvulas {
+  grid-area: valvulas;
+}
+
+.videoSincro {
+  grid-area: videoSincro;
+}
+
+.padreSincro {
+  display: grid;
+  margin: 20px 80px;
+  gap: 10px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "intro intro" "pbujias bujias" "inyeccion pinyeccion" "paceleracion aceleracion" "sensores psensores" "pcorrea pcorrea" "correa valvulas" "videoSincro videoSincro";
+  justify-items: center;
+  align-items: center;
+}
+.padreSincro .parrafo {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  color: rgb(49, 5, 5);
+  background-color: darkgray;
+  border: 5px solid black;
+}
+
+.imgs {
+  border: 5px solid black;
+  width: 540px;
+  height: 430px;
+}
+
+.introFreno {
+  grid-area: introFreno;
+}
+
+.disco {
+  grid-area: disco;
+}
+
+.tambor {
+  grid-area: tambor;
+}
+
+.pastillas {
+  grid-area: pastillas;
+}
+
+.liquido {
+  grid-area: liquido;
+}
+
+.purga {
+  grid-area: purga;
+}
+
+.pbomba {
+  grid-area: pbomba;
+}
+
+.bomba {
+  grid-area: bomba;
+}
+
+.bombai {
+  grid-area: bombai;
+}
+
+.manguera {
+  grid-area: manguera;
+}
+
+.absFmano {
+  grid-area: absFmano;
+}
+
+.modulo {
+  grid-area: modulo;
+}
+
+.fmano {
+  grid-area: fmano;
+}
+
+.videoFreno {
+  grid-area: videoFreno;
+}
+
+.padreFreno {
+  display: grid;
+  margin: 20px;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "introFreno introFreno introFreno" "disco tambor pastillas" "liquido liquido purga" "pbomba pbomba pbomba" "bomba bombai manguera" "absFmano absFmano absFmano" "modulo fmano fmano" "videoFreno videoFreno videoFreno";
+  justify-items: center;
+  align-items: center;
+}
+.padreFreno .parrafo {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  color: rgb(49, 5, 5);
+  background-color: darkgray;
+  border: 5px solid black;
+}
+
+.imgf {
+  border: 5px solid black;
+  width: 400px;
+  height: 300px;
+}
+
+.ifmano {
+  width: 820px;
+}
+
+.introSuspen {
+  grid-area: introSuspen;
+}
+
+.pamortiguadores {
+  grid-area: pamortiguadores;
+}
+
+.amortiguadores {
+  grid-area: amortiguadores;
+}
+
+.amortiguador {
+  grid-area: amortiguador;
+}
+
+.rotulas {
+  grid-area: rotulas;
+}
+
+.protulas {
+  grid-area: protulas;
+}
+
+.pbujes {
+  grid-area: pbujes;
+}
+
+.bujes {
+  grid-area: bujes;
+}
+
+.tijeras {
+  grid-area: tijeras;
+}
+
+.ptijeras {
+  grid-area: ptijeras;
+}
+
+.pespirales {
+  grid-area: pespirales;
+}
+
+.espirales {
+  grid-area: espirales;
+}
+
+.muelles {
+  grid-area: muelles;
+}
+
+.videoSuspen {
+  grid-area: videoSuspen;
+}
+
+.padreSuspen {
+  display: grid;
+  margin: 26px 12px;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-template-areas: "introSuspen" "pamortiguadores" "amortiguadores" "amortiguador" "protulas" "rotulas" "pbujes" "bujes" "ptijeras" "tijeras" "pespirales" "espirales" "videoSuspen";
+}
+.padreSuspen .parrafo {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  color: rgb(49, 5, 5);
+  background-color: darkgray;
+  border: 5px solid black;
+}
+
+.imgsus {
+  border: 5px solid black;
+  width: 100%;
+  height: 430px;
+}
+
+.videoSu {
+  height: 350px;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .padreSuspen {
+    display: grid;
+    margin: 26px 12px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-template-areas: "introSuspen introSuspen" "pamortiguadores pamortiguadores" "amortiguadores amortiguador" "protulas rotulas" "pbujes bujes" "ptijeras tijeras" "pespirales espirales" "videoSuspen videoSuspen";
+  }
+  .padreSuspen .parrafo {
+    font-size: 25px;
+  }
+  .videoSu {
+    height: 430px;
+    width: 600px;
+  }
+}
+@media (min-width: 1023px) {
+  .padreSuspen {
+    display: grid;
+    margin: 26px 80px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-template-areas: "introSuspen introSuspen" "pamortiguadores pamortiguadores" "amortiguadores amortiguador" "protulas rotulas" "pbujes bujes" "ptijeras tijeras" "pespirales espirales" "videoSuspen videoSuspen";
+  }
+  .videoSu {
+    height: 550px;
+    width: 800px;
+  }
+}
+.introScaner {
+  grid-area: introScaner;
+}
+
+.pcodigos {
+  grid-area: pcodigos;
+}
+
+.check {
+  grid-area: check;
+}
+
+.abs {
+  grid-area: abs;
+}
+
+.servicio {
+  grid-area: servicio;
+}
+
+.pequipos {
+  grid-area: pequipos;
+}
+
+.scaner {
+  grid-area: scaner;
+}
+
+.osciloscopio {
+  grid-area: osciloscopio;
+}
+
+.omultimetro {
+  grid-area: omultimetro;
+}
+
+.multimetro {
+  grid-area: multimetro;
+}
+
+.puntaLogica {
+  grid-area: puntaLogica;
+}
+
+.pdiagramas {
+  grid-area: pdiagramas;
+}
+
+.diagramas {
+  grid-area: diagramas;
+}
+
+.padreScaner {
+  display: grid;
+  margin: 26px 12px;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-template-areas: "introScaner" "pcodigos" "check" "abs" "servicio" "pequipos" "scaner" "osciloscopio" "omultimetro" "multimetro" "puntaLogica" "pdiagramas" "diagramas";
+}
+.padreScaner .parrafo {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  color: rgb(49, 5, 5);
+  background-color: darkgray;
+  border: 5px solid black;
+}
+
+.imgscaner {
+  border: 5px solid black;
+  width: 100%;
+  height: 430px;
+}
+
+@media (min-width: 600px) {
+  .padreScaner {
+    display: grid;
+    margin: 26px 12px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-template-areas: "introScaner introScaner introScaner introScaner" "pcodigos pcodigos check check" "abs abs servicio servicio" "pequipos pequipos omultimetro omultimetro" "scaner scaner osciloscopio osciloscopio" "multimetro multimetro puntaLogica puntaLogica" "pdiagramas pdiagramas diagramas diagramas";
+  }
+  .padreScaner .parrafo {
+    font-size: 25px;
+  }
+  .padreScaner .imgscaner {
+    border: 5px solid black;
+    width: 100%;
+    height: 650px;
+  }
+}
+@media (min-width: 1023px) {
+  .padreScaner {
+    display: grid;
+    margin: 26px 80px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-template-areas: "introScaner introScaner introScaner introScaner" "pcodigos pcodigos check check" "abs abs servicio servicio" "pequipos pequipos omultimetro omultimetro" "scaner osciloscopio multimetro puntaLogica " "pdiagramas pdiagramas diagramas diagramas";
+  }
+}
+.nombre {
+  grid-area: nombre;
+}
+
+apellido {
+  grid-area: apellido;
+}
+
+.telefono {
+  grid-area: telefono;
+}
+
+.email {
+  grid-area: email;
+}
+
+.año {
+  grid-area: año;
+}
+
+.marca {
+  grid-area: marca;
+}
+
+.modelo {
+  grid-area: modelo;
+}
+
+.kilometraje {
+  grid-area: kilometraje;
+}
+
+.pdireccion {
+  grid-area: pdireccion;
+}
+
+.mapa {
+  grid-area: mapa;
+}
+
+.padrecontacto {
+  display: grid;
+  margin: 26px 12px;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-template-areas: "nombre" "apellido" "telefono" "email" "año" "marca" "modelo" "kilometraje" "enviar" "pdireccion" "mapa";
+}
+.padrecontacto .parrafo {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  color: rgb(49, 5, 5);
+  background-color: darkgray;
+  border: 5px solid black;
+}
+
+@media (max-width: 1023px) {
+  .padre {
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 450px 450px 450px;
+  }
+  h1 {
+    font-size: 60px;
+    margin: 5px;
+    padding: 15px;
+  }
+  .padreSincro {
+    display: grid;
+    margin: 20px 20px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "intro" "pbujias" "bujias" "inyeccion" "pinyeccion" "paceleracion" "aceleracion" "sensores" "psensores" "pcorrea" "correa" "valvulas" "videosincro";
+    justify-items: center;
+    align-items: center;
+  }
+  .imgs {
+    width: 480px;
+    height: 380px;
+  }
+  .padreFreno {
+    display: grid;
+    margin: 20px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "introFreno disco" "introFreno tambor" "introFreno pastillas" "liquido purga" "pbomba bombai" "pbomba bomba" "pbomba manguera" "absFmano absFmano" "modulo fmano" "videoFreno videoFreno";
+    justify-items: center;
+    align-items: center;
+  }
+  .ifmano {
+    width: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .padre {
+    grid-template-columns: 1fr;
+    grid-template-rows: 380px 380px 380px 380px;
+    margin: 20px;
+  }
+  .principal {
+    font-size: 15px;
+    margin: 20px;
+  }
+  h1 {
+    font-size: 50px;
+    margin: 5px;
+    padding: 15px;
+  }
+  footer {
+    margin: 20px;
+    justify-content: space-around;
+  }
+  .flexfooter {
+    width: 70px;
+  }
+  .padreSincro {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "intro" "pbujias" "bujias" "inyeccion" "pinyeccion" "paceleracion" "aceleracion" "sensores" "psensores" "pcorrea" "correa" "valvulas" "videosincro";
+    justify-items: center;
+    align-items: center;
+  }
+  .padreFreno {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "introFreno" "disco" "tambor" "pastillas" "liquido" "purga" "pbomba" "bomba" "bombai" "manguera" "absFmano" "modulo" "fmano" "videoFreno";
+    justify-items: center;
+    align-items: center;
+  }
+  .imgf {
+    width: 450px;
+    height: 400px;
+  }
+  .video {
+    width: 450px;
+  }
+}/*# sourceMappingURL=sass.css.map */

@@ -1,0 +1,25 @@
+
+.padre{
+    background-color: rgb(247, 178, 178);
+    margin: 20px 80px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px ;
+    justify-items: center;
+    align-items: center;
+    .hijo{
+        width: 350px;
+        h2{
+            font-family:'Roboto', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .imagenes{
+            width: 350PX;
+            height: 300PX;
+            border: 5px solid black;  
+        }
+        
+    }
+}
+

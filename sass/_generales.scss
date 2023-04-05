@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital@0;1 & family= Roboto & display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    padding: 20px;
+    .color{
+        background-color:rgb(253, 229, 229) ;
+        .text{
+            font-family:'Roboto', sans-serif;
+        }
+    }
+}
+.gradiente{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: linear-gradient(to top,darkgray ,  rgb(253, 229, 229) ) ;
+    
+    h1{
+        color: black;
+        padding: 27px;
+        margin: 20px ;
+        text-align: center;
+        text-transform: uppercase;
+        font-family:'Roboto', sans-serif;
+        font-size: 75px; 
+        }
+    }
+
+
+.principal{
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family:'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 25px; 
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    text-transform: uppercase;
+    color: rgb(49, 5, 5);
+    background-color: darkgray;    
+}
+
+footer{
+    background-color: rgb(253, 229, 229);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .flexfooter{
+        width: 100px;
+    } 
+}

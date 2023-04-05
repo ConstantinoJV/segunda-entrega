@@ -1,0 +1,66 @@
+.nombre{
+    grid-area: nombre;
+}
+apellido{
+    grid-area: apellido;
+}
+.telefono{
+    grid-area: telefono;
+}
+.email{
+    grid-area: email;
+}
+.año{
+    grid-area: año;
+}
+.marca{
+    grid-area: marca;
+}
+.modelo{
+    grid-area:modelo;
+}
+.kilometraje{
+    grid-area: kilometraje;
+}
+.pdireccion{
+    grid-area: pdireccion;
+}
+.mapa{
+    grid-area: mapa;
+}
+
+.padrecontacto{
+    display: grid;
+    margin: 26px 12px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-template-areas: 
+    "nombre"    
+    "apellido"
+    "telefono"
+    "email"
+    "año"
+    "marca"
+    "modelo"
+    "kilometraje"
+    "enviar"
+    "pdireccion"
+    "mapa"
+;
+    .parrafo{
+        font-family:'Roboto', sans-serif;
+        font-weight: bolder;
+        font-size: 18px; 
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 2px;
+        word-spacing: 6px;
+        color: rgb(49, 5, 5);
+        background-color: darkgray;  
+        border: 5px solid black; 
+    }
+}
+
+
