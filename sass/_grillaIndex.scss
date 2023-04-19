@@ -8,18 +8,46 @@
     justify-items: center;
     align-items: center;
     .hijo{
-        width: 350px;
+        width: 380px;
         h2{
             font-family:'Roboto', sans-serif;
             text-align: center;
             text-transform: uppercase;
         }
         .imagenes{
-            width: 350PX;
-            height: 300PX;
-            border: 5px solid black;  
+            width: 100%;
+            height: 310PX;
+            border: 5px solid black; 
+            transition: all 1s;
+        }
+        .imagenes:hover{
+            width: 110%;
+            height: 350px;
+            padding:10px;
+            border: 2px solid black; 
         }
         
     }
 }
+@media (max-width:1023px){
+    .padre{
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 450px 450px 450px;
+    }
+}
+@media (max-width:600px){
+    .padre{
+        grid-template-columns: 1fr;
+        grid-template-rows: 380px 380px 380px 380px;
+        margin: 0px;
+        .hijo{
+            .imagenes{
+                width: 350PX;
+                height: 310PX;
+                border: 5px solid black;             
+            }
+        }
+    }
 
+    
+}

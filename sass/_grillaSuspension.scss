@@ -44,7 +44,7 @@
 
 .padreSuspen{
     display: grid;
-    margin: 26px 12px;
+    margin: 0px;
     gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -66,23 +66,23 @@
     .parrafo{
         font-family:'Roboto', sans-serif;
         font-weight: bolder;
-        font-size: 18px; 
+        font-size: 20px; 
         text-align: center;
         line-height: 40px;
         letter-spacing: 2px;
         word-spacing: 6px;
         color: rgb(49, 5, 5);
         background-color: darkgray;  
-        border: 5px solid black; 
+        border: 3px solid black; 
     }
 }
 .imgsus{
-    border: 5px solid black; 
+    border: 3px solid black; 
     width: 100%;
-    height: 430px;
+    height: 300px;
 }
 .videoSu{
-    height: 350px;
+    height: 280px;
     width: 100%;
 }
 
@@ -108,6 +108,8 @@
         "videoSuspen videoSuspen";
         .parrafo
         {
+            margin-left: 10px;
+            margin-right: 10px;
             font-size: 25px;
         }
     }
@@ -136,8 +138,8 @@
         "videoSuspen videoSuspen";
     }
     .videoSu{
-        height: 550px;
-        width: 800px;
+        height: 340px;
+        width: 500px;
     }
 }
 

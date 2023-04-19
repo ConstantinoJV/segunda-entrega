@@ -77,3 +77,77 @@
 .ifmano{
     width: 820px;
 }
+@media  (max-width:1023px){
+    .padreFreno{
+        display: grid;
+        margin: 5px;
+        gap:10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "introFreno disco"
+        "introFreno tambor"
+        "introFreno pastillas"
+        "liquido purga"
+        "pbomba bombai"
+        "pbomba bomba"
+        "pbomba manguera"
+        "absFmano absFmano"
+        "modulo fmano"
+        "videoFreno videoFreno";
+        justify-items: center;
+        align-items: center;
+        .parrafo{
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 3px solid black; 
+        }
+        }
+        .imgf{
+            border: 3px solid black; 
+            width: 100%;
+            height: 300px;
+        }
+        .ifmano{
+        width: 100%;
+    }
+}
+@media (max-width:600px){
+    .padreFreno{
+        display: grid;
+        gap:10px;
+        margin: 0px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "introFreno"
+        "disco"
+        "tambor"
+        "pastillas"
+        "liquido"
+        "purga"
+        "pbomba"
+        "bomba"
+        "bombai"
+        "manguera"
+        "absFmano"
+        "modulo"
+        "fmano"
+        "videoFreno";
+        justify-items: center;
+        align-items: center;
+        .parrafo{
+            font-size: 20px;
+            border: 3px solid black; 
+        }
+    }
+    .imgf{
+        width: 100%;
+        height: 245px;
+        border: 3px solid black; 
+    }
+    .video{
+        width: 370px;
+        height: 280px;
+    }
+    
+
+}

@@ -43,7 +43,7 @@ header .color .text {
   word-spacing: 6px;
   text-transform: uppercase;
   color: rgb(49, 5, 5);
-  background-color: darkgray;
+  background-color: rgba(211, 45, 45, 0.3411764706);
 }
 
 footer {
@@ -83,7 +83,7 @@ footer .flexfooter {
   align-items: center;
 }
 .padre .hijo {
-  width: 350px;
+  width: 380px;
 }
 .padre .hijo h2 {
   font-family: "Roboto", sans-serif;
@@ -91,11 +91,36 @@ footer .flexfooter {
   text-transform: uppercase;
 }
 .padre .hijo .imagenes {
-  width: 350PX;
-  height: 300PX;
+  width: 100%;
+  height: 310PX;
   border: 5px solid black;
+  transition: all 1s;
+}
+.padre .hijo .imagenes:hover {
+  width: 110%;
+  height: 350px;
+  padding: 10px;
+  border: 2px solid black;
 }
 
+@media (max-width: 1023px) {
+  .padre {
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 450px 450px 450px;
+  }
+}
+@media (max-width: 600px) {
+  .padre {
+    grid-template-columns: 1fr;
+    grid-template-rows: 380px 380px 380px 380px;
+    margin: 0px;
+  }
+  .padre .hijo .imagenes {
+    width: 350PX;
+    height: 310PX;
+    border: 5px solid black;
+  }
+}
 .intro {
   grid-area: intro;
 }
@@ -172,10 +197,53 @@ footer .flexfooter {
 
 .imgs {
   border: 5px solid black;
-  width: 540px;
-  height: 430px;
+  width: 450px;
+  height: 300px;
 }
 
+@media (max-width: 1023px) {
+  .padreSincro {
+    display: grid;
+    margin: 20px 20px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "intro" "pbujias" "bujias" "inyeccion" "pinyeccion" "paceleracion" "aceleracion" "sensores" "psensores" "pcorrea" "correa" "valvulas" "videoSincro";
+    justify-items: center;
+    align-items: center;
+  }
+  .padreSincro .parrafo {
+    border: 3px solid black;
+  }
+  .imgs {
+    border: 3px solid black;
+    width: 480px;
+    height: 380px;
+  }
+}
+@media (max-width: 600px) {
+  .padreSincro {
+    display: grid;
+    gap: 10px;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "intro" "pbujias" "bujias" "inyeccion" "pinyeccion" "paceleracion" "aceleracion" "sensores" "psensores" "pcorrea" "correa" "valvulas" "videoSincro";
+    justify-items: center;
+    align-items: center;
+  }
+  .padreSincro .parrafo {
+    font-size: 20px;
+    border: 3px solid black;
+  }
+  .imgs {
+    border: 3px solid black;
+    width: 100%;
+    height: 270px;
+  }
+  .videosin {
+    width: 370px;
+    height: 245px;
+  }
+}
 .introFreno {
   grid-area: introFreno;
 }
@@ -264,6 +332,54 @@ footer .flexfooter {
   width: 820px;
 }
 
+@media (max-width: 1023px) {
+  .padreFreno {
+    display: grid;
+    margin: 5px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "introFreno disco" "introFreno tambor" "introFreno pastillas" "liquido purga" "pbomba bombai" "pbomba bomba" "pbomba manguera" "absFmano absFmano" "modulo fmano" "videoFreno videoFreno";
+    justify-items: center;
+    align-items: center;
+  }
+  .padreFreno .parrafo {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 3px solid black;
+  }
+  .imgf {
+    border: 3px solid black;
+    width: 100%;
+    height: 300px;
+  }
+  .ifmano {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .padreFreno {
+    display: grid;
+    gap: 10px;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "introFreno" "disco" "tambor" "pastillas" "liquido" "purga" "pbomba" "bomba" "bombai" "manguera" "absFmano" "modulo" "fmano" "videoFreno";
+    justify-items: center;
+    align-items: center;
+  }
+  .padreFreno .parrafo {
+    font-size: 20px;
+    border: 3px solid black;
+  }
+  .imgf {
+    width: 100%;
+    height: 245px;
+    border: 3px solid black;
+  }
+  .video {
+    width: 370px;
+    height: 280px;
+  }
+}
 .introSuspen {
   grid-area: introSuspen;
 }
@@ -322,7 +438,7 @@ footer .flexfooter {
 
 .padreSuspen {
   display: grid;
-  margin: 26px 12px;
+  margin: 0px;
   gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -332,24 +448,24 @@ footer .flexfooter {
 .padreSuspen .parrafo {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   line-height: 40px;
   letter-spacing: 2px;
   word-spacing: 6px;
   color: rgb(49, 5, 5);
   background-color: darkgray;
-  border: 5px solid black;
+  border: 3px solid black;
 }
 
 .imgsus {
-  border: 5px solid black;
+  border: 3px solid black;
   width: 100%;
-  height: 430px;
+  height: 300px;
 }
 
 .videoSu {
-  height: 350px;
+  height: 280px;
   width: 100%;
 }
 
@@ -364,6 +480,8 @@ footer .flexfooter {
     grid-template-areas: "introSuspen introSuspen" "pamortiguadores pamortiguadores" "amortiguadores amortiguador" "protulas rotulas" "pbujes bujes" "ptijeras tijeras" "pespirales espirales" "videoSuspen videoSuspen";
   }
   .padreSuspen .parrafo {
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 25px;
   }
   .videoSu {
@@ -382,8 +500,8 @@ footer .flexfooter {
     grid-template-areas: "introSuspen introSuspen" "pamortiguadores pamortiguadores" "amortiguadores amortiguador" "protulas rotulas" "pbujes bujes" "ptijeras tijeras" "pespirales espirales" "videoSuspen videoSuspen";
   }
   .videoSu {
-    height: 550px;
-    width: 800px;
+    height: 340px;
+    width: 500px;
   }
 }
 .introScaner {
@@ -440,7 +558,7 @@ footer .flexfooter {
 
 .padreScaner {
   display: grid;
-  margin: 26px 12px;
+  margin: 0px;
   gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -457,13 +575,13 @@ footer .flexfooter {
   word-spacing: 6px;
   color: rgb(49, 5, 5);
   background-color: darkgray;
-  border: 5px solid black;
+  border: 3px solid black;
 }
 
 .imgscaner {
-  border: 5px solid black;
+  border: 3px solid black;
   width: 100%;
-  height: 430px;
+  height: 400px;
 }
 
 @media (min-width: 600px) {
@@ -477,12 +595,14 @@ footer .flexfooter {
     grid-template-areas: "introScaner introScaner introScaner introScaner" "pcodigos pcodigos check check" "abs abs servicio servicio" "pequipos pequipos omultimetro omultimetro" "scaner scaner osciloscopio osciloscopio" "multimetro multimetro puntaLogica puntaLogica" "pdiagramas pdiagramas diagramas diagramas";
   }
   .padreScaner .parrafo {
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 25px;
   }
   .padreScaner .imgscaner {
     border: 5px solid black;
     width: 100%;
-    height: 650px;
+    height: 300px;
   }
 }
 @media (min-width: 1023px) {
@@ -495,12 +615,17 @@ footer .flexfooter {
     justify-items: center;
     grid-template-areas: "introScaner introScaner introScaner introScaner" "pcodigos pcodigos check check" "abs abs servicio servicio" "pequipos pequipos omultimetro omultimetro" "scaner osciloscopio multimetro puntaLogica " "pdiagramas pdiagramas diagramas diagramas";
   }
+  .padreScaner .imgscaner {
+    border: 5px solid black;
+    width: 100%;
+    height: 350px;
+  }
 }
 .nombre {
   grid-area: nombre;
 }
 
-apellido {
+.apellido {
   grid-area: apellido;
 }
 
@@ -532,20 +657,50 @@ apellido {
   grid-area: pdireccion;
 }
 
-.mapa {
-  grid-area: mapa;
+.enviar {
+  grid-area: enviar;
 }
 
 .padrecontacto {
   display: grid;
-  margin: 26px 12px;
-  gap: 10px;
+  margin: 20px;
+  gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  align-items: center;
-  grid-template-areas: "nombre" "apellido" "telefono" "email" "año" "marca" "modelo" "kilometraje" "enviar" "pdireccion" "mapa";
+  justify-items: stretch;
+  grid-template-areas: "nombre" "apellido" "telefono" "email" "año" "marca" "modelo" "kilometraje" "enviar";
 }
-.padrecontacto .parrafo {
+.padrecontacto .celda {
+  margin: 20px;
+}
+.padrecontacto .celda input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-bottom: 2px solid blue;
+}
+.padrecontacto .celda .boton {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #a49fe2;
+  width: 100%;
+}
+.padrecontacto .celda .pform {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  color: rgb(49, 5, 5);
+}
+
+.parrafo {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 18px;
@@ -555,88 +710,71 @@ apellido {
   word-spacing: 6px;
   color: rgb(49, 5, 5);
   background-color: darkgray;
-  border: 5px solid black;
+  border: 3px solid black;
 }
 
-@media (max-width: 1023px) {
-  .padre {
-    grid-template-columns: 1fr;
-    grid-template-rows: 450px 450px 450px 450px;
+.mapad {
+  border: 3px solid black;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 300px;
+}
+
+.mapa {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 600px) {
+  .padrecontacto {
+    display: grid;
+    margin: 20px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: stretch;
+    grid-template-areas: "nombre apellido" "telefono email" "año marca" "modelo kilometraje" "enviar enviar";
   }
+  .mapad {
+    margin: 20px;
+    width: auto;
+    height: 450px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .parrafo {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+@media (max-width: 1023px) {
   h1 {
     font-size: 60px;
     margin: 5px;
     padding: 15px;
   }
-  .padreSincro {
-    display: grid;
-    margin: 20px 20px;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "intro" "pbujias" "bujias" "inyeccion" "pinyeccion" "paceleracion" "aceleracion" "sensores" "psensores" "pcorrea" "correa" "valvulas" "videosincro";
-    justify-items: center;
-    align-items: center;
-  }
-  .imgs {
-    width: 480px;
-    height: 380px;
-  }
-  .padreFreno {
-    display: grid;
-    margin: 20px;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "introFreno disco" "introFreno tambor" "introFreno pastillas" "liquido purga" "pbomba bombai" "pbomba bomba" "pbomba manguera" "absFmano absFmano" "modulo fmano" "videoFreno videoFreno";
-    justify-items: center;
-    align-items: center;
-  }
-  .ifmano {
-    width: 400px;
-  }
 }
 @media (max-width: 600px) {
-  .padre {
-    grid-template-columns: 1fr;
-    grid-template-rows: 380px 380px 380px 380px;
-    margin: 20px;
+  header {
+    padding: 0px;
   }
   .principal {
     font-size: 15px;
-    margin: 20px;
+    margin: 0px;
   }
-  h1 {
-    font-size: 50px;
-    margin: 5px;
-    padding: 15px;
+  .gradiente {
+    margin: 0px;
+  }
+  .gradiente h1 {
+    font-size: 36px;
+    margin: 12px;
+    padding: 20px;
   }
   footer {
-    margin: 20px;
-    justify-content: space-around;
+    margin: 10px;
   }
-  .flexfooter {
-    width: 70px;
-  }
-  .padreSincro {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "intro" "pbujias" "bujias" "inyeccion" "pinyeccion" "paceleracion" "aceleracion" "sensores" "psensores" "pcorrea" "correa" "valvulas" "videosincro";
-    justify-items: center;
-    align-items: center;
-  }
-  .padreFreno {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "introFreno" "disco" "tambor" "pastillas" "liquido" "purga" "pbomba" "bomba" "bombai" "manguera" "absFmano" "modulo" "fmano" "videoFreno";
-    justify-items: center;
-    align-items: center;
-  }
-  .imgf {
-    width: 450px;
-    height: 400px;
-  }
-  .video {
-    width: 450px;
+  footer .flexfooter {
+    width: 60px;
   }
 }/*# sourceMappingURL=sass.css.map */
